@@ -59,7 +59,7 @@ checkAnswer = () => {
 gameOver = () => {
   console.log("wrong");
   playSound("wrong");
-  $("h1").text("Game Over. Press Here to Restart.");
+  $("h1").text("GAME OVER. PRESS HERE TO RESTART.");
   $("body").addClass("gameover");
   setTimeout(() => {
     $("body").removeClass("gameover");
