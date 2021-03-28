@@ -82,3 +82,4 @@ animatePress = (color) => {
 // Actions
 $(".btn").on("click", handler);
 $(document).on("keypress", gameStart);
+$(document).on("click", gameStart);
