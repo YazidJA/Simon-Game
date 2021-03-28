@@ -2,18 +2,29 @@ body {
   background-color: darkblue;
   color: #fef2bf;
   text-align: center;
+  font-family: "Press Start 2P", cursive;
 }
 
 h1 {
-  font-family: "Press Start 2P", cursive;
-  font-size: 2rem;
+  font-size: 1rem;
+  width: 70vmin;
+  margin: 5vmin auto 5vmin auto;
+}
+
+h2 {
+  font-size: 1rem;
+  margin: auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 5vh;
 }
 
 .btn {
-  margin: 3vmax;
+  margin: 2vmin;
   display: inline-block;
-  height: 15vmax;
-  width: 15vmax;
+  height: 30vmin;
+  width: 30vmin;
   border: 10px solid black;
   border-radius: 20%;
 }

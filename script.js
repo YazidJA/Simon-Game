@@ -4,6 +4,7 @@ let gameArray = [];
 let playerArray = [];
 let started = false;
 let level = 0;
+let record = 0;
 
 // Start Game
 gameStart = () => {
@@ -22,9 +23,13 @@ nextSequence = () => {
   $(`#${gameChosenColor}`).fadeIn(100).fadeOut(100).fadeIn(100);
   playSound(gameChosenColor);
   level++;
-  $("h1").text(`Level ${level}`);
+  $("h1").text(`LEVEL ${level}`);
   console.log("game:", gameArray);
   console.log("player:", playerArray);
+  if (record < level-1) {
+    record = level-1;
+  }
+  $("h2").text(`RECORD: ${record}`);
 };
 
 // Color Click
