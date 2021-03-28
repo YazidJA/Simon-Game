@@ -54,7 +54,7 @@ checkAnswer = () => {
 gameOver = () => {
   console.log("wrong");
   playSound("wrong");
-  $("h1").text("Game Over, Press A Key to Restart.");
+  $("h1").text("Game Over. Press Here to Restart.");
   $("body").addClass("gameover");
   setTimeout(() => {
     $("body").removeClass("gameover");
@@ -81,5 +81,4 @@ animatePress = (color) => {
 
 // Actions
 $(".btn").on("click", handler);
-$(document).on("keypress", gameStart);
-$(document).on("click", gameStart);
+$("h1").on("click", gameStart);
