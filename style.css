@@ -21,7 +21,7 @@ body {
   border-radius: 20%;
 }
 
-.start {
+#start {
   width: 70vmin;
   margin: 3vmin auto;
   height: 12vmin;
@@ -46,13 +46,9 @@ body {
 #dialog,
 .ui-widget-header {
   background-color: black;
-  border: 2px solid white;
+  border: 1px solid white;
 }
 
-.ui-button {
-  background-color: red;
-  margin: 0 20px;
-}
 
 #blue {
   background-color: blue;

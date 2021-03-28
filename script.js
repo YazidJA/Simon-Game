@@ -86,16 +86,16 @@ animatePress = (color) => {
 };
 
 // Instructions
+$("#dialog").dialog({ autoOpen: false });
+$(".ui-button").remove();
 
-$("#dialog").dialog({
-  autoOpen: false,
-});
 $(".fa").click(function () {
   $("#dialog").dialog("open");
 });
 
-$(".ui-button").text("X");
-
 // Actions
 $(".btn").on("click", handler);
 $("#start").on("click", gameStart);
+$(".main").click(function () {
+  $("#dialog").dialog("close");
+});
