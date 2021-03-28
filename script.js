@@ -23,13 +23,14 @@ nextSequence = () => {
   $(`#${gameChosenColor}`).fadeIn(100).fadeOut(100).fadeIn(100);
   playSound(gameChosenColor);
   level++;
-  $("h1").text(`LEVEL ${level}`);
+  $("#level").text(`LEVEL ${level}`);
   console.log("game:", gameArray);
   console.log("player:", playerArray);
-  if (record < level-1) {
-    record = level-1;
+  if (record < level - 1) {
+    record = level - 1;
   }
-  $("h2").text(`RECORD: ${record}`);
+  $("#start").text("");
+  $("h2").text(`HI: ${record}`);
 };
 
 // Color Click
@@ -59,7 +60,7 @@ checkAnswer = () => {
 gameOver = () => {
   console.log("wrong");
   playSound("wrong");
-  $("h1").text("GAME OVER. PRESS HERE TO RESTART.");
+  $("#start").html("GAME OVER<br>PRESS HERE TO RESTART");
   $("body").addClass("gameover");
   setTimeout(() => {
     $("body").removeClass("gameover");
@@ -84,6 +85,17 @@ animatePress = (color) => {
   }, 100);
 };
 
+// Instructions
+
+$("#dialog").dialog({
+  autoOpen: false,
+});
+$(".fa").click(function () {
+  $("#dialog").dialog("open");
+});
+
+$(".ui-button").text("X");
+
 // Actions
 $(".btn").on("click", handler);
-$("h1").on("click", gameStart);
+$("#start").on("click", gameStart);

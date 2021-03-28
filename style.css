@@ -3,30 +3,55 @@ body {
   color: #fef2bf;
   text-align: center;
   font-family: "Press Start 2P", cursive;
+  line-height: 2.5em;
+  font-size: 0.55em;
 }
 
-h1 {
-  font-size: 1rem;
+.title {
   width: 70vmin;
-  margin: 5vmin auto 5vmin auto;
-}
-
-h2 {
-  font-size: 1rem;
-  margin: auto;
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 5vh;
+  height: 8vmin;
+  margin: 3vmin auto;
 }
 
 .btn {
-  margin: 2vmin;
   display: inline-block;
   height: 30vmin;
   width: 30vmin;
   border: 10px solid black;
   border-radius: 20%;
+}
+
+.start {
+  width: 70vmin;
+  margin: 3vmin auto;
+  height: 12vmin;
+}
+
+.hiscore {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 1vmin;
+  vertical-align: bottom;
+  margin: 0;
+}
+
+.fa {
+  position: absolute;
+  right: 3vmin;
+  bottom: 1vmin;
+  margin: 0;
+}
+
+#dialog,
+.ui-widget-header {
+  background-color: black;
+  border: 2px solid white;
+}
+
+.ui-button {
+  background-color: red;
+  margin: 0 20px;
 }
 
 #blue {

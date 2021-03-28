@@ -5,16 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Simon Game</title>
-    <link rel="stylesheet" href="style.css" />
+
+  
+    <!-- Font Awesome -->
     <link
-      href="https://fonts.googleapis.com/css?family=Press+Start+2P"
       rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    <!-- Javascript -->
     <script src="./script.js" defer></script>
+      <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
+  <!-- Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Press+Start+2P"
+    rel="stylesheet"
+  />
   </head>
   <body>
-    <h1>PRESS HERE TO START</h1>
+    <!-- Title / Levels -->
+    <div class="title">
+      <h1 id="level">LET'S PLAY !</h1>
+    </div>
+    <!-- Game -->
     <div class="row">
       <div type="button" class="btn" id="red"></div>
       <div type="button" class="btn" id="green"></div>
@@ -23,6 +39,17 @@
       <div type="button" class="btn" id="yellow"></div>
       <div type="button" class="btn" id="blue"></div>
     </div>
-    <h2></h2>
+</div>
+    <!-- Start / Restart -->
+    <h1 id="start" class="start">PRESS HERE TO START</h1>
+    <!-- High Score -->
+    <h2 class="hiscore"></h2>
+    <!-- Instructions -->
+    <div id="dialog" title="INSTRUCTIONS" ui-button-text="X">
+      THE GAME WILL CREATE A SERIE OF TONES AND LIGHTS AND REQUIRES YOU TO REPEAT
+      THE SEQUENCE.<br />
+      IF YOU SUCCEED, THE SERIE WILL BECOME PROGRESSIVELY LONGER AND MORE COMPLEX.
+    </div>
+    <i class="fa fa-question-circle fa-3x"></i>
   </body>
 </html>
