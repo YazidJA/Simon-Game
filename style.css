@@ -1,5 +1,5 @@
 body {
-  background-color: #5f939a;
+  background-color: #1b2021;
   color: #eac8af;
   text-align: center;
   font-family: "Press Start 2P", cursive;
@@ -17,7 +17,7 @@ body {
   display: inline-block;
   height: 30vmin;
   width: 30vmin;
-  border: 10px solid #1b2021;
+  border: 10px solid #5f939a;
   border-radius: 20%;
 }
 
