@@ -1,6 +1,6 @@
 body {
-  background-color: darkblue;
-  color: #fef2bf;
+  background-color: #5f939a;
+  color: #eac8af;
   text-align: center;
   font-family: "Press Start 2P", cursive;
   line-height: 2.5em;
@@ -17,7 +17,7 @@ body {
   display: inline-block;
   height: 30vmin;
   width: 30vmin;
-  border: 10px solid black;
+  border: 10px solid #1b2021;
   border-radius: 20%;
 }
 
@@ -45,10 +45,10 @@ body {
 
 #dialog,
 .ui-widget-header {
-  background-color: black;
-  border: 1px solid white;
+  background-color: #d8ac9c;
+  color: #1b2021;
+  border: 1px solid;
 }
-
 
 #blue {
   background-color: blue;
