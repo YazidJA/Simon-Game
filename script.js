@@ -85,17 +85,33 @@ animatePress = (color) => {
   }, 100);
 };
 
-// Instructions
-$("#dialog").dialog({ autoOpen: false });
-$(".ui-button").remove();
-
-$(".fa").click(function () {
-  $("#dialog").dialog("open");
-});
-
 // Actions
 $(".btn").on("click", handler);
 $("#start").on("click", gameStart);
-$(".main").click(function () {
-  $("#dialog").dialog("close");
+
+// Dialog creation
+$("#dialog").dialog({ autoOpen: false });
+$(".ui-button").remove();
+
+// Open dialog
+openHandler = () => {
+  $("#dialog").dialog("open");
+};
+
+$(".fa").on("click", openHandler);
+
+// // Close dialog
+
+$(document).mousedown(function (e) {
+  let clicked = $(e.target); // get the element clicked
+  if (
+    clicked.is("#dialog") ||
+    clicked.parents().is("#dialog") ||
+    clicked.is(".ui-dialog-titlebar")
+  ) {
+    return; // click happened within the dialog, do nothing here
+  } else {
+    // click was outside the dialog, so close it
+    $("#dialog").dialog("close");
+  }
 });
