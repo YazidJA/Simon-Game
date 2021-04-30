@@ -1,2 +1,2 @@
-# Simon-Game
- JS+jQuerry Game
+# Simon Game
+Simon Game app. Made with HTML/CSS/Javascript.
